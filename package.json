@@ -1,6 +1,6 @@
 {
   "name": "storiesjs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Stories with one line of javascript!",
   "main": "lib/main.js",
   "author": "Matt Gaikema",
