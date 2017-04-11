@@ -9,7 +9,7 @@ module.exports = {
 		filename: "stories.bundle.js"
 	},
 	plugins: [
-		//new webpack.optimize.UglifyJsPlugin({mangle: false})
+		new webpack.optimize.UglifyJsPlugin()
 	],
 	target: 'web',
 	"resolve": {

@@ -37,18 +37,21 @@ export namespace Stories
 			}
 		}
 
+		/**
+		 * Display the stories.
+		 */
 		public displayStories(): void
 		{
 			if (!this.isAttached)
 			{
-				document.body.appendChild(this.ul);
+				document.body.insertBefore(this.ul, document.body.firstChild);
 				this.isAttached = true;
 			}
 		}
 
 		public hideStories(): void
 		{
-
+			// TODO
 		}
 	}
 
