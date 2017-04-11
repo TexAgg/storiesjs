@@ -1,0 +1,19 @@
+{
+  "name": "storiesjs",
+  "version": "1.0.0",
+  "description": "Stories with one line of javascript!",
+  "main": "index.js",
+  "author": "Matt Gaikema",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "style-loader": "^0.16.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "@types/superagent": "^2.0.36",
+    "superagent": "^3.5.2"
+  }
+}
