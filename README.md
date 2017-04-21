@@ -19,9 +19,8 @@ to your website.
 
 If you don't want to download the files, just add the following line to your website:
 ```
-<script src="https://dl.dropboxusercontent.com/s/j0zdbngb4fl5oim/stories.bundle.js?dl=0"></script>
+<script src="https://s3-us-west-2.amazonaws.com/static.mattgaikema/stories.bundle.js"></script>
 ```
-Be warned that this method is not stable at all.
 
 ---
 
