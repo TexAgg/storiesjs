@@ -2,6 +2,11 @@
   "name": "storiesjs",
   "version": "2.0.2",
   "description": "Stories with one line of javascript!",
+  "keywords": [
+    "stories",
+    "facebook",
+    "snapchat"
+  ],
   "main": "lib/main.js",
   "author": "Matt Gaikema",
   "license": "MIT",

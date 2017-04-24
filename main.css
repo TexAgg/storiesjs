@@ -1,6 +1,18 @@
+/* The ul the stories are in. */
 .stories {
 	display: flex;
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.stories-container {
+	padding: 10px;
+	padding-bottom: 0px;
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .story-item {

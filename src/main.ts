@@ -5,8 +5,11 @@ require("../main.css");
 // Get the data and then create a StoryBook.
 let obj;
 let arr = new Array();
+// Determine how many stories to get.
+let numStories = Math.floor(Math.max(10, windowWidth()/80));
+
 request.get("https://randomuser.me/api/")
-.query({include: ["name", "picture"], results: 10})
+.query({include: ["name", "picture"], results: numStories})
 .then(function(res)
 {
 	obj = res.body['results'];
@@ -22,3 +25,17 @@ request.get("https://randomuser.me/api/")
 	let storybook = new Stories.StoryBook(arr);
 	storybook.displayStories();
 });
+
+/**
+ * http://stackoverflow.com/a/11744120/5415895
+ * 
+ * @returns {number} 
+ */
+function windowWidth(): number
+{
+	let w = window;
+	let d = document;
+	let e = d.documentElement;
+	let g = d.getElementsByTagName('body')[0];
+	return w.innerWidth || e.clientWidth || g.clientWidth;
+}

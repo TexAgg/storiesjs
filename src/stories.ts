@@ -44,7 +44,10 @@ export namespace Stories
 		{
 			if (!this.isAttached)
 			{
-				document.body.insertBefore(this.ul, document.body.firstChild);
+				let div = document.createElement('div');
+				div.classList.add("stories-container");
+				div.appendChild(this.ul);
+				document.body.insertBefore(div, document.body.firstChild);
 				this.isAttached = true;
 			}
 		}
