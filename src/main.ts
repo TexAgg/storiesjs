@@ -5,9 +5,10 @@ require("../main.css");
 // Get the data and then create a StoryBook.
 let obj;
 let arr = new Array();
-// Determine how many stories to get.
+// Determine roughly how many stories to get.
 let numStories = Math.floor(Math.max(10, windowWidth()/80));
 
+// Get random profiles from api.
 request.get("https://randomuser.me/api/")
 .query({include: ["name", "picture"], results: numStories})
 .then(function(res)
@@ -27,6 +28,7 @@ request.get("https://randomuser.me/api/")
 });
 
 /**
+ * Get the width of the page.
  * http://stackoverflow.com/a/11744120/5415895
  * 
  * @returns {number} 
